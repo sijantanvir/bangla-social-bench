@@ -1,0 +1,18 @@
+# Data & Core Utils
+datasets
+pandas
+numpy
+python-dotenv
+
+# LLM APIs
+openai
+requests
+huggingface_hub
+
+# Parsing & Text Processing
+pylatexenc
+transformers
+
+# Statistical Analysis & Plotting
+scipy
+matplotlib
