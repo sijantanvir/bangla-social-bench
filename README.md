@@ -131,12 +131,10 @@ python scripts/inter_annotator_agreement.py
 
 This script uses `sklearn.metrics.cohen_kappa_score`; install `scikit-learn` if it is not already available in your environment.
 
-The log-probability scripts are experimental. `collect_logprobs.py` expects a client function that returns both text and logprobs; the default `call_gpt` helper currently returns text only unless modified.
-
 ## Limitations
 
 BanglaSocialBench is grounded in Standard Colloquial Bangla and widely shared Bangladeshi norms. It does not aim to cover all regional dialects, sociolects, rural-urban variation, or code-switching practices. Regionally appropriate but non-standard answers may therefore be marked incorrect under this evaluation setup.
 
 ## Citation
 
-Todo
+Tofo
