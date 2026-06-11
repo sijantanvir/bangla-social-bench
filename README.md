@@ -125,23 +125,20 @@ python scripts/analyze_politeness.py
 
 `aggregate_accuracies.py` computes domain-level and macro cultural accuracy from response logs. `analyze_politeness.py` compares over-politeness and under-politeness in pronominal addressing.
 
-For annotation agreement:
-
-```bash
-python scripts/inter_annotator_agreement.py
-```
-
-This script uses `sklearn.metrics.cohen_kappa_score`; install `scikit-learn` if it is not already available in your environment.
-
 ## Limitations
 
 BanglaSocialBench is grounded in Standard Colloquial Bangla and widely shared Bangladeshi norms. It does not aim to cover all regional dialects, sociolects, rural-urban variation, or code-switching practices. Regionally appropriate but non-standard answers may therefore be marked incorrect under this evaluation setup.
 
 ## Citation
 
+```bibtex
 @misc{2603.15949,
 Author = {Tanvir Ahmed Sijan and S. M Golam Rifat and Pankaj Chowdhury Partha and Md. Tanjeed Islam and Md. Musfique Anwar},
 Title = {BanglaSocialBench: A Benchmark for Evaluating Sociopragmatic and Cultural Alignment of LLMs in Bangladeshi Social Interaction},
 Year = {2026},
 Eprint = {arXiv:2603.15949},
 }
+```
+
+
+
