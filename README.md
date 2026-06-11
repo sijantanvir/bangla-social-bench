@@ -2,13 +2,15 @@
 
 BanglaSocialBench is an evaluation benchmark for assessing whether Large Language Models (LLMs) can navigate the sociopragmatic and cultural nuances of the Bangla language within real-world Bangladeshi interactional contexts.
 
-LLMs have demonstrated strong multilingual fluency, yet fluency alone does not guarantee **socially appropriate** language use. Most prior studies evaluate "culture" through trivia or factual recall (*Culturally Thin Evaluation*) and ignores the notion of **Communicative Competence** (ie, The ability to generate text that is not just grammatically correct, but contextually *and* socially appropriate). This paper is our efforts towards Culturally thick Evaluation where we use **Sociopragmatics** to probe LLMs to get deeper insights into their understanding of a culture. We evaluate cultural competence by assessing language use as **situated social behavior.**
+LLMs have demonstrated strong multilingual fluency, yet fluency alone does not guarantee **socially appropriate** language use. Most prior studies evaluate "culture" through trivia or factual recall  and ignores the notion of **Communicative Competence** (ie, The ability to generate text that is not just grammatically correct, but contextually *and* socially appropriate). This paper is our efforts towards Culturally thick Evaluation where we use **Sociopragmatics** to probe LLMs to get deeper insights into their understanding of a culture. We evaluate cultural competence by assessing language use as **situated social behavior.**
+
+![](./assets/overview.png)
 
 Dataset: [sijantanvir/BanglaSocialBench](https://huggingface.co/datasets/sijantanvir/BanglaSocialBench)
 
-## What the Benchmark Tests
+## Domains
 
-BanglaSocialBench contains 1,719 human-written and native-speaker-validated instances across three domains:
+BanglaSocialBench contains 1,719  human-written and native-speaker-validated instances across three domains:
 
 | Domain | Subset | Items | What is evaluated |
 | --- | --- | ---: | --- |
@@ -137,4 +139,9 @@ BanglaSocialBench is grounded in Standard Colloquial Bangla and widely shared Ba
 
 ## Citation
 
-Tofo
+@misc{2603.15949,
+Author = {Tanvir Ahmed Sijan and S. M Golam Rifat and Pankaj Chowdhury Partha and Md. Tanjeed Islam and Md. Musfique Anwar},
+Title = {BanglaSocialBench: A Benchmark for Evaluating Sociopragmatic and Cultural Alignment of LLMs in Bangladeshi Social Interaction},
+Year = {2026},
+Eprint = {arXiv:2603.15949},
+}
