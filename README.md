@@ -132,11 +132,24 @@ BanglaSocialBench is grounded in Standard Colloquial Bangla and widely shared Ba
 ## Citation
 
 ```bibtex
-@misc{2603.15949,
-Author = {Tanvir Ahmed Sijan and S. M Golam Rifat and Pankaj Chowdhury Partha and Md. Tanjeed Islam and Md. Musfique Anwar},
-Title = {BanglaSocialBench: A Benchmark for Evaluating Sociopragmatic and Cultural Alignment of LLMs in Bangladeshi Social Interaction},
-Year = {2026},
-Eprint = {arXiv:2603.15949},
+@inproceedings{sijan-etal-2026-banglasocialbench,
+    title = "{B}angla{S}ocial{B}ench: A Benchmark for Evaluating Sociopragmatic and Cultural Alignment of {LLM}s in Bangladeshi Social Interaction",
+    author = "Sijan, Tanvir Ahmed  and
+      Rifat, S. M. Golam  and
+      Partha, Pankaj  and
+      Islam, Md. Tanjeed  and
+      Anwar, Md Musfique",
+    editor = "T.Y.S.S., Santosh  and
+      Rodriguez, Juan Diego  and
+      de Gibert, Ona",
+    booktitle = "Proceedings of the 64th Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 4: Student Research Workshop)",
+    month = jul,
+    year = "2026",
+    address = "San Diego, California, United States",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.acl-srw.22/",
+    pages = "247--280",
+    ISBN = "979-8-89176-393-7",
 }
 ```
 
