@@ -1,8 +1,6 @@
 # BanglaSocialBench
 
-BanglaSocialBench is an evaluation benchmark for assessing whether Large Language Models (LLMs) can navigate the sociopragmatic and cultural nuances of the Bangla language within real-world Bangladeshi interactional contexts.
-
-LLMs have demonstrated strong multilingual fluency, yet fluency alone does not guarantee **socially appropriate** language use. Most prior studies evaluate "culture" through trivia or factual recall  and ignores the notion of **Communicative Competence** (ie, The ability to generate text that is not just grammatically correct, but contextually *and* socially appropriate). This paper is our efforts towards Culturally thick Evaluation where we use **Sociopragmatics** to probe LLMs to get deeper insights into their understanding of a culture. We evaluate cultural competence by assessing language use as **situated social behavior.**
+BanglaSocialBench is an evaluation benchmark for assessing whether Large Language Models (LLMs) can navigate the sociopragmatic and cultural nuances of the Bangla language within real-world Bangladeshi social interactional contexts.
 
 ![](./assets/overview.png)
 
@@ -21,21 +19,23 @@ BanglaSocialBench contains 1,719  human-written and native-speaker-validated ins
 
 ### Theoretical Grounding
 
-- **Address Terms:** Grounded in Hymes' **SPEAKING framework**, incorporating contextual triggers like setting, scene, participant dynamics, and social norms.
-- **Social Customs:** Derived ffrom ethnographic descriptions of Bangladeshi social interaction and formalized using **Natural Semantic Metalanguage (NSM)**.
+- **Address Terms:** Grounded in Hymes' [**SPEAKING framework**](https://en.wikipedia.org/wiki/SPEAKING), incorporating contextual triggers like setting, participants (age, gender), ends, key, instruments , and social norms.
+
+  ![](./assets/pronominal.png)
+
+- **Social Customs:** Derived from ethnographic descriptions of Bangladeshi social interaction and formalized using **[Natural Semantic Metalanguage (NSM)](https://en.wikipedia.org/wiki/Natural_semantic_metalanguage)**.
+
 - **Prompting Note:** All model evaluations are executed using native Bangla prompts. English translations provided in repository figures are strictly for documentation and presentation purposes.
 
 ## Key Findings 
 
 The paper evaluates 12 LLMs in a zero-shot setting with temperature 0. The evaluated models include GPT-4o mini, GPT-4o, Gemini 2.0 Flash, Gemini 2.5 Flash, Claude Haiku 3.5, Claude Sonnet 4, LLaMA 3 8B Instruct, LLaMA 3.3 70B Instruct, Gemma 3 12B, Gemma 3 27B, Qwen 2.5 72B Instruct, and DeepSeek V3.1.
 
-Main reported patterns:
-
 - Even larger models still make systematic sociopragmatic errors.
 - Many models overuse the formal pronoun `apni`, especially where `tumi` or `tui` is socially appropriate.
-- Inappropriate address choices concentrate in downward-hierarchy and informal contexts.
+- Inappropriate address choices concentrate in downward-hierarchy (Elder to Younger) and informal contexts.
 - Models often assign decisive probability mass to one pronoun even when human annotators accept two forms.
-- Kinship errors include cross-religious conflation of culturally marked kinship terms.
+- Kinterm errors include cross-religious conflation.
 
 Best reported domain scores include Gemini 2.5 Flash on Address Terms and Kinship Reasoning, and Claude Sonnet 4 on Social Customs.
 
@@ -63,8 +63,6 @@ BanglaSocialBench/
 
 ## Setup
 
-Use Python 3.10 or newer.
-
 ```bash
 python -m venv .venv
 source .venv/bin/activate  # Windows PowerShell: .venv\Scripts\Activate.ps1
@@ -79,8 +77,6 @@ GEMINI_API_KEY=...
 OPENROUTER_API_KEY=...
 TOGETHER_API_KEY=...
 ```
-
-The dataset is loaded directly from Hugging Face, so no local CSV files are required.
 
 ## Running an Evaluation
 
